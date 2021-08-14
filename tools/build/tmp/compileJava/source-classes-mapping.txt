@@ -1,4 +1,8 @@
 io/tools/JsonProcessor.java
  io.tools.JsonProcessor
+io/tools/ResourceLibraryGenerateProcessor.java
+ io.tools.ResourceLibraryGenerateProcessor
+io/tools/BaseResourceLibrary.java
+ io.tools.BaseResourceLibrary
 io/tools/Json.java
  io.tools.Json

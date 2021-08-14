@@ -13,10 +13,14 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
-    compile("org.gc:tools:8.0-SNAPSHOT")
+    compile("org.gc:tools:3.6-SNAPSHOT")
     //annotationProcessor project(':tools')
 
-    annotationProcessor 'org.gc:tools:8.0-SNAPSHOT'
+    annotationProcessor 'org.gc:tools:3.6-SNAPSHOT'
+
+    compileOnly 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+
 }
 
 test {

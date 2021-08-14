@@ -4,7 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30bb2b99-480c-42d5-9692-39ff7b9c0957" name="Default Changelist" comment="" />
+    <list default="true" id="30bb2b99-480c-42d5-9692-39ff7b9c0957" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/src/main/java/com/snszyk/iiot/marketization/domain/position/entity/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/src/main/java/com/snszyk/iiot/marketization/domain/position/entity/PositionId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/src/main/java/com/snszyk/iiot/marketization/domain/position/entity/PositionName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system/src/main/java/com/snszyk/iiot/marketization/domain/position/repository/PositionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/src/main/java/io/tools/BaseResourceLibrary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/src/main/java/io/tools/ResourceLibraryGenerateProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/system/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/build/classes/java/main/com/system/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/build/classes/java/main/com/system/MyBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/build/generated/sources/annotationProcessor/java/main/com/system/HelloWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/build/libs/system-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/build/classes/java/main/META-INF/services/javax.annotation.processing.Processor" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build/classes/java/main/META-INF/services/javax.annotation.processing.Processor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/build/classes/java/main/io/tools/JsonProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build/classes/java/main/io/tools/JsonProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/build/libs/tools-8.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/src/main/java/io/tools/JsonProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/src/main/java/io/tools/JsonProcessor.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +104,7 @@
                 <item name="gencode" type="f1a62948:ProjectNode" />
                 <item name="tools" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
+                <item name="upload" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -73,6 +112,16 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -91,6 +140,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1whLe9L4xE3W0YRo98659WuXpKe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -98,18 +148,30 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.tools" />
+    </key>
+  </component>
   <component name="RunManager" selected="Gradle.gencode:system [build]">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -198,6 +260,27 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="gencode:tools [uploadArchives]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/tools" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="uploadArchives" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="ProcessTest" type="Remote">
       <module name="gencode.tools.main" />
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -215,16 +298,18 @@
     <list>
       <item itemvalue="Gradle.gencode:system [build]" />
       <item itemvalue="Gradle.gencode:system [clean]" />
-      <item itemvalue="Remote JVM Debug.ProcessTest" />
       <item itemvalue="Gradle.gencode:tools [clean]" />
       <item itemvalue="Gradle.gencode:tools [build]" />
+      <item itemvalue="Gradle.gencode:tools [uploadArchives]" />
+      <item itemvalue="Remote JVM Debug.ProcessTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.gencode:system [build]" />
         <item itemvalue="Gradle.gencode:system [clean]" />
-        <item itemvalue="Gradle.gencode:tools [build]" />
+        <item itemvalue="Gradle.gencode:tools [uploadArchives]" />
         <item itemvalue="Gradle.gencode:tools [clean]" />
+        <item itemvalue="Gradle.gencode:tools [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -236,21 +321,29 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628905966914</updated>
-      <workItem from="1628905968851" duration="655000" />
+      <workItem from="1628905968851" duration="11551000" />
+      <workItem from="1628931745371" duration="5642000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/tools/src/main/java/io/tools/JsonProcessor.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/gc/tools/8.0-SNAPSHOT/tools-8.0-20210813.184359-1.jar!/io/tools/JsonProcessor.class</url>
           <line>58</line>
@@ -261,7 +354,72 @@
           <line>52</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/gc/tools/1.3-SNAPSHOT/tools-1.3-20210814.031616-1.jar!/io/tools/ResourceLibraryGenerateProcessor.class</url>
+          <line>73</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/gc/tools/1.3-SNAPSHOT/tools-1.3-20210814.031616-1.jar!/io/tools/ResourceLibraryGenerateProcessor.class</url>
+          <line>72</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/gc/tools/1.4-SNAPSHOT/tools-1.4-20210814.031835-1.jar!/io/tools/ResourceLibraryGenerateProcessor.class</url>
+          <line>74</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/gc/tools/1.4-SNAPSHOT/tools-1.4-20210814.031835-1.jar!/io/tools/ResourceLibraryGenerateProcessor.class</url>
+          <line>73</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/gc/tools/1.5-SNAPSHOT/tools-1.5-20210814.032809-1.jar!/io/tools/ResourceLibraryGenerateProcessor.class</url>
+          <line>75</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/gc/tools/1.6-SNAPSHOT/tools-1.6-20210814.033054-1.jar!/io/tools/ResourceLibraryGenerateProcessor.class</url>
+          <line>83</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/gc/tools/1.7-SNAPSHOT/tools-1.7-20210814.041259-1.jar!/io/tools/ResourceLibraryGenerateProcessor.class</url>
+          <line>84</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/gc/tools/1.9-SNAPSHOT/tools-1.9-20210814.053437-1.jar!/io/tools/ResourceLibraryGenerateProcessor.class</url>
+          <line>87</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/gc/tools/2.4-SNAPSHOT/tools-2.4-20210814.090948-1.jar!/io/tools/ResourceLibraryGenerateProcessor.class</url>
+          <line>88</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tools/src/main/java/io/tools/ResourceLibraryGenerateProcessor.java</url>
+          <line>167</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/gc/tools/2.8-SNAPSHOT/tools-2.8-20210814.094506-1.jar!/io/tools/ResourceLibraryGenerateProcessor.class</url>
+          <line>110</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tools/src/main/java/io/tools/ResourceLibraryGenerateProcessor.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GradleRunConfiguration">
+        <watch expression="executableElement" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

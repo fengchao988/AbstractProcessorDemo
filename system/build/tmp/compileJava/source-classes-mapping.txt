@@ -1,2 +1,0 @@
-com/system/MyBean.java
- com.system.MyBean

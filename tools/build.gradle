@@ -3,7 +3,7 @@ plugins {
 }
 apply plugin: 'maven'
 group 'org.gc'
-version '8.0-SNAPSHOT'
+version '3.6-SNAPSHOT'
 
 repositories {
     mavenLocal()
@@ -13,11 +13,11 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    //以下两条是为了减少编写入口文件工作量，引入的第三方工具
     compile 'com.google.auto.service:auto-service:1.0-rc2'
     annotationProcessor 'com.google.auto.service:auto-service:1.0-rc5'
+    //生成java文件
     implementation 'com.squareup:javapoet:1.12.1'
-
-    //compile 'com.squareup:javapoet:1.8.0'
 }
 
 test {
