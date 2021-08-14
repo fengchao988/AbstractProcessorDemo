@@ -1,0 +1,4 @@
+rootProject.name = 'gencode'
+include 'tools'
+include 'system'
+

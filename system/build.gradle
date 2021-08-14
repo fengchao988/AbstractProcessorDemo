@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'org.gc'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    compile("org.gc:tools:8.0-SNAPSHOT")
+    //annotationProcessor project(':tools')
+
+    annotationProcessor 'org.gc:tools:8.0-SNAPSHOT'
+}
+
+test {
+    useJUnitPlatform()
+}
