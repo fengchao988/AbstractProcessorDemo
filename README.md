@@ -1,1 +1,2 @@
 # AbstractProcessorDemo
+网上有很多关于AbstractProcessor的例子，基本上都是基于Android的，目前Springboot-gradle需要用到此工具，所以搜集了一些资料，供大家参考。
