@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.gc</groupId>
+  <artifactId>tools</artifactId>
+  <versioning>
+    <latest>1.0.1-SNAPSHOT</latest>
+    <versions>
+      <version>1.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20210817095408</lastUpdated>
+  </versioning>
+</metadata>

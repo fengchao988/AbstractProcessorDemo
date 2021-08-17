@@ -8,6 +8,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.CLASS)
 @Target({ElementType.FIELD, ElementType.TYPE})
 public @interface BaseResourceLibrary {
-
-    Class bean();
+    String persistence ();
 }

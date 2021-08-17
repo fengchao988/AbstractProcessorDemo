@@ -1,0 +1,94 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.gc",
+    "module": "tools",
+    "version": "1.0.1-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.8",
+      "buildId": "3t4rtkskjfh7fixju6gcnrkc7y"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.auto.service",
+          "module": "auto-service",
+          "version": {
+            "requires": "1.0-rc2"
+          }
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-data-jpa"
+        }
+      ],
+      "files": [
+        {
+          "name": "tools-1.0.1-SNAPSHOT-plain.jar",
+          "url": "tools-1.0.1-SNAPSHOT-plain.jar",
+          "size": 10227,
+          "sha512": "10acba160ec167c0d774f2d55f4069200108b361c86202ac972980e3390ec3ca9b9a884857352c533b5d5c9ca2c4199fa9377576ddb390c4bd89501872e8955f",
+          "sha256": "bfd02fc5ec2e744cc666ed9f1f13de7f93f26e320a8855e22f77631a4a6875f2",
+          "sha1": "04f4c8bb3aaa225ded46fe1ac0405abbc832b3a8",
+          "md5": "2da905363fca210a2726d887696fb294"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.squareup",
+          "module": "javapoet",
+          "version": {
+            "requires": "1.12.1"
+          }
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-data-jpa"
+        },
+        {
+          "group": "com.google.auto.service",
+          "module": "auto-service",
+          "version": {
+            "requires": "1.0-rc2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "tools-1.0.1-SNAPSHOT-plain.jar",
+          "url": "tools-1.0.1-SNAPSHOT-plain.jar",
+          "size": 10227,
+          "sha512": "10acba160ec167c0d774f2d55f4069200108b361c86202ac972980e3390ec3ca9b9a884857352c533b5d5c9ca2c4199fa9377576ddb390c4bd89501872e8955f",
+          "sha256": "bfd02fc5ec2e744cc666ed9f1f13de7f93f26e320a8855e22f77631a4a6875f2",
+          "sha1": "04f4c8bb3aaa225ded46fe1ac0405abbc832b3a8",
+          "md5": "2da905363fca210a2726d887696fb294"
+        }
+      ]
+    }
+  ]
+}

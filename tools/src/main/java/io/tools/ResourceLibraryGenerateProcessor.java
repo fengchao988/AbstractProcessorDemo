@@ -2,6 +2,9 @@ package io.tools;
 
 import com.google.auto.service.AutoService;
 import com.squareup.javapoet.*;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.stereotype.Repository;
 
 import javax.annotation.processing.*;
 import javax.lang.model.SourceVersion;
@@ -17,8 +20,15 @@ import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * 生成资源库接口实现类的工具
+ */
 @AutoService(Processor.class)
-@SupportedAnnotationTypes("io.tools.BaseResourceLibrary")
+@SupportedAnnotationTypes(
+        {"io.tools.BaseResourceLibrary",
+        "io.tools.BaseImplResourceLibrary"
+        }
+)
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
 public class ResourceLibraryGenerateProcessor extends AbstractProcessor {
 
@@ -68,7 +78,6 @@ public class ResourceLibraryGenerateProcessor extends AbstractProcessor {
     @Override
     public synchronized void init(ProcessingEnvironment processingEnv) {
         super.init(processingEnv);
-
         this.typeUtils = processingEnv.getTypeUtils();
         this.messager = processingEnv.getMessager();
         this.filer = processingEnv.getFiler();
@@ -93,6 +102,7 @@ public class ResourceLibraryGenerateProcessor extends AbstractProcessor {
         HashSet<String> set = new HashSet<>();
         //本次要处理多少注解 这块就set多少个
         set.add(BaseResourceLibrary.class.getCanonicalName());
+        set.add(BaseImplResourceLibrary.class.getCanonicalName());
         return set;
     }
 
@@ -106,19 +116,15 @@ public class ResourceLibraryGenerateProcessor extends AbstractProcessor {
      */
     @Override
     public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv) {
+
         //获取被注解元素的集合
         for (Element element : roundEnv.getElementsAnnotatedWith(BaseResourceLibrary.class)) {
-
             if (!(element.getKind() == ElementKind.INTERFACE)) return false;
-
+            //持久化仓库的名称
+            String persistenceName = element.getAnnotation(BaseResourceLibrary.class).persistence();
             //定义方法
             List<MethodSpec> methodSpecList = new ArrayList<>();
-
-            // 在gradle的控制台打印信息
             messager.printMessage(Diagnostic.Kind.NOTE, "InterfaceName: " + element.getSimpleName().toString());
-            /*Class beseBean = element.getAnnotation(BaseResourceLibrary.class).bean();
-
-            messager.printMessage(Diagnostic.Kind.NOTE, "BaseBeanName: " + beseBean.getSimpleName());*/
             element.getEnclosedElements().forEach(method->{
                 ElementKind kind = method.getKind();
                 if (kind == ElementKind.CLASS){
@@ -131,12 +137,10 @@ public class ResourceLibraryGenerateProcessor extends AbstractProcessor {
                 }else if (kind == ElementKind.METHOD){
                     ExecutableElement executableElement = (ExecutableElement) method;
                     messager.printMessage(Diagnostic.Kind.NOTE,"=============returnType======"+ executableElement.getReturnType());
-
                     //获取参数信息
                     List<ParameterSpec> extracted = extracted(executableElement);
                     //包装返回值信息
                     CodeBlock codeBlock = returnData(executableElement);
-
                     //构造接口的所有方法
                     MethodSpec main = MethodSpec.methodBuilder(executableElement.getSimpleName().toString())
                             .addModifiers(Modifier.PUBLIC, Modifier.PUBLIC)
@@ -152,30 +156,58 @@ public class ResourceLibraryGenerateProcessor extends AbstractProcessor {
                 } else {
                     messager.printMessage(Diagnostic.Kind.NOTE,"=============othertype======"+method.getSimpleName());
                 }
-
             });
+            // 根据注解生成持久化接口类
+            genPersistenceJava(element, persistenceName);
 
-            // 类
-            TypeSpec classData = TypeSpec.classBuilder(element.getSimpleName().toString()+"Impl")//
-                    .addModifiers(Modifier.PUBLIC)//
-                    .addMethods(methodSpecList)
-                    .addSuperinterface(element.asType())
-                    .build();
+            // 生成主资源库实现类
+            genRepositoryImplJava(element, methodSpecList);
 
-            String packageName = elementUtils.getPackageOf(element).getQualifiedName().toString();
-            messager.printMessage(Diagnostic.Kind.NOTE,"=============packageName======"+packageName);
-            try {
-                JavaFile javaFile = JavaFile.builder(packageName, classData)//
-                        .addFileComment(" This codes are generated automatically. Do not modify!")//
-                        .build();
 
-                File srcMainFile = new File("C:\\Users\\Fengc\\Desktop\\gencode\\system\\src\\main\\java");
-                javaFile.writeTo(srcMainFile);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
         return true;
+    }
+
+    private void genPersistenceJava(Element element, String persistenceName) {
+        TypeSpec persistenceClass = TypeSpec.interfaceBuilder(persistenceName)
+                .addModifiers(Modifier.PUBLIC)
+                .addAnnotation(Repository.class)
+                .addSuperinterface(TypeName.get(JpaRepository.class))
+                //.superclass(TypeName.get(JpaSpecificationExecutor.class))
+                .build();
+
+        String packageName = elementUtils.getPackageOf(element).getQualifiedName().toString();
+        messager.printMessage(Diagnostic.Kind.NOTE,"=============packageName======"+packageName);
+        try {
+            JavaFile javaFile = JavaFile.builder(packageName, persistenceClass)
+                    .addFileComment(" This codes are generated automatically. Do not modify!")
+                    .build();
+            File srcMainFile = new File("C:\\Users\\Fengc\\Desktop\\gencode\\system\\src\\main\\java");
+            javaFile.writeTo(srcMainFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void genRepositoryImplJava(Element element, List<MethodSpec> methodSpecList) {
+        TypeSpec classData = TypeSpec.classBuilder(element.getSimpleName().toString()+"Impl")
+                .addModifiers(Modifier.PUBLIC)
+                .addMethods(methodSpecList)
+                .addSuperinterface(element.asType())
+                //.addField()
+                .build();
+
+        String packageName = elementUtils.getPackageOf(element).getQualifiedName().toString();
+        messager.printMessage(Diagnostic.Kind.NOTE,"=============packageName======"+packageName);
+        try {
+            JavaFile javaFile = JavaFile.builder(packageName, classData)
+                    .addFileComment(" This codes are generated automatically. Do not modify!")
+                    .build();
+            File srcMainFile = new File("C:\\Users\\Fengc\\Desktop\\gencode\\system\\src\\main\\java");
+            javaFile.writeTo(srcMainFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private CodeBlock returnData(ExecutableElement executableElement) {

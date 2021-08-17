@@ -1,43 +1,45 @@
 plugins {
+    id 'org.springframework.boot' version '2.5.2'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
+    id 'maven-publish'
 }
-apply plugin: 'maven'
+
 group 'org.gc'
-version '3.6-SNAPSHOT'
+version '1.0.1-SNAPSHOT'
 
 repositories {
     mavenLocal()
     mavenCentral()
 }
 
+
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
     //以下两条是为了减少编写入口文件工作量，引入的第三方工具
     compile 'com.google.auto.service:auto-service:1.0-rc2'
     annotationProcessor 'com.google.auto.service:auto-service:1.0-rc5'
     //生成java文件
     implementation 'com.squareup:javapoet:1.12.1'
+
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
 }
 
 test {
     useJUnitPlatform()
 }
-def localMavenRepo = 'file://' + new File(System.getProperty('user.home'), '.m2/repository').absolutePath
-
-// 上传Task，Gradle会生成并上传pom.xml文件。
-uploadArchives {
-    repositories {
-        mavenDeployer {
-            repository(url: localMavenRepo)
-
-            //构造项目的Pom文件
-            pom.project {
-                name = project.name
-                packaging = 'jar'
-                description = 'description'
-            }
+publishing {
+    publications {
+        //noinspection GroovyAssignabilityCheck
+        maven(MavenPublication) {
+            //noinspection GroovyAssignabilityCheck
+            from components.java
         }
+    }
 
+    repositories {
+        mavenCentral {
+        }
     }
 }

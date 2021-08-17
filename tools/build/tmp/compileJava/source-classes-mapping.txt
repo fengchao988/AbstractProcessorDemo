@@ -4,5 +4,7 @@ io/tools/ResourceLibraryGenerateProcessor.java
  io.tools.ResourceLibraryGenerateProcessor
 io/tools/BaseResourceLibrary.java
  io.tools.BaseResourceLibrary
+io/tools/BaseImplResourceLibrary.java
+ io.tools.BaseImplResourceLibrary
 io/tools/Json.java
  io.tools.Json

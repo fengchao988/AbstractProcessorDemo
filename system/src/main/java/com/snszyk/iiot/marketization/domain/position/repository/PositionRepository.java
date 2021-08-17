@@ -4,7 +4,7 @@ import com.snszyk.iiot.marketization.domain.position.entity.Position;
 import com.snszyk.iiot.marketization.domain.position.entity.PositionId;
 import io.tools.BaseResourceLibrary;
 
-@BaseResourceLibrary(bean = Position.class)
+@BaseResourceLibrary(persistence = "PersistenceJpa")
 public interface PositionRepository {
 
     Position fromId(PositionId positionId);
