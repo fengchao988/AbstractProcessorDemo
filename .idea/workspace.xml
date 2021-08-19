@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30bb2b99-480c-42d5-9692-39ff7b9c0957" name="Default Changelist" comment="调试通过的样例">
-      <change afterPath="$PROJECT_DIR$/tools/src/main/java/io/tools/BaseImplResourceLibrary.java" afterDir="false" />
+    <list default="true" id="30bb2b99-480c-42d5-9692-39ff7b9c0957" name="Default Changelist" comment="添加Jpa实现接口">
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
@@ -16,19 +15,32 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha256-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha256-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha512-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha512-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/system/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/src/main/java/com/snszyk/iiot/marketization/domain/position/repository/PositionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/system/src/main/java/com/snszyk/iiot/marketization/domain/position/repository/PositionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/src/main/java/com/system/MyBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/build/bootJarMainClassName" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/build/classes/java/main/com/snszyk/iiot/marketization/domain/position/entity/Position.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/build/classes/java/main/com/snszyk/iiot/marketization/domain/position/entity/PositionId$PositionIdBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/build/classes/java/main/com/snszyk/iiot/marketization/domain/position/entity/PositionId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/build/classes/java/main/com/snszyk/iiot/marketization/domain/position/entity/PositionName$PositionNameBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/build/classes/java/main/com/snszyk/iiot/marketization/domain/position/entity/PositionName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/build/classes/java/main/com/snszyk/iiot/marketization/domain/position/repository/PersistenceJpa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/build/classes/java/main/com/snszyk/iiot/marketization/domain/position/repository/PositionRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/build/classes/java/main/com/snszyk/iiot/marketization/domain/position/repository/PositionRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/src/main/java/com/snszyk/iiot/marketization/domain/position/repository/PersistenceJpa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/src/main/java/com/snszyk/iiot/marketization/domain/position/repository/PositionRepositoryImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/build/classes/java/main/io/tools/JsonProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build/classes/java/main/io/tools/JsonProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/src/main/java/io/tools/BaseResourceLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/src/main/java/io/tools/BaseResourceLibrary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/build/classes/java/main/io/tools/ResourceLibraryGenerateProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build/classes/java/main/io/tools/ResourceLibraryGenerateProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/build/libs/tools-1.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build/libs/tools-1.0.1-SNAPSHOT-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/build/publications/maven/module.json" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build/publications/maven/module.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/build/publications/maven/pom-default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build/publications/maven/pom-default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/build/tmp/publishMavenPublicationToMavenLocal/module-maven-metadata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build/tmp/publishMavenPublicationToMavenLocal/module-maven-metadata.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/build/tmp/publishMavenPublicationToMavenLocal/snapshot-maven-metadata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build/tmp/publishMavenPublicationToMavenLocal/snapshot-maven-metadata.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/src/main/java/io/tools/ResourceLibraryGenerateProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/src/main/java/io/tools/ResourceLibraryGenerateProcessor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,15 +185,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.gencode:system [build]">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -207,6 +217,27 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="gencode:system [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/system" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="classes" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="gencode:system [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -219,27 +250,6 @@
         <option name="taskNames">
           <list>
             <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="gencode:tools [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/tools" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -306,12 +316,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Remote JVM Debug.ProcessTest" />
-      <item itemvalue="Gradle.gencode:tools [clean]" />
       <item itemvalue="Gradle.gencode:tools [publishToMavenLocal]" />
+      <item itemvalue="Remote JVM Debug.ProcessTest" />
       <item itemvalue="Gradle.gencode:system [clean]" />
       <item itemvalue="Gradle.gencode:system [build]" />
-      <item itemvalue="Gradle.gencode:tools [build]" />
+      <item itemvalue="Gradle.gencode:system [classes]" />
+      <item itemvalue="Gradle.gencode:tools [clean]" />
     </list>
     <recent_temporary>
       <list>
@@ -319,7 +329,7 @@
         <item itemvalue="Gradle.gencode:system [clean]" />
         <item itemvalue="Gradle.gencode:tools [publishToMavenLocal]" />
         <item itemvalue="Gradle.gencode:tools [clean]" />
-        <item itemvalue="Gradle.gencode:tools [build]" />
+        <item itemvalue="Gradle.gencode:system [classes]" />
       </list>
     </recent_temporary>
   </component>
@@ -337,7 +347,8 @@
       <workItem from="1629029831103" duration="58000" />
       <workItem from="1629029900821" duration="19000" />
       <workItem from="1629180206830" duration="7972000" />
-      <workItem from="1629190373424" duration="3847000" />
+      <workItem from="1629190373424" duration="3956000" />
+      <workItem from="1629371508975" duration="5704000" />
     </task>
     <task id="LOCAL-00001" summary="调试通过的样例">
       <created>1628939270463</created>
@@ -346,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628939270463</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="优化资源库接口">
+      <created>1629194270600</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1629194270600</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +384,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="调试通过的样例" />
-    <option name="LAST_COMMIT_MESSAGE" value="调试通过的样例" />
+    <MESSAGE value="优化资源库接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化资源库接口" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -433,13 +452,38 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/tools/src/main/java/io/tools/ResourceLibraryGenerateProcessor.java</url>
-          <line>121</line>
-          <option name="timeStamp" value="37" />
+          <line>164</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/tools/src/main/java/io/tools/ResourceLibraryGenerateProcessor.java</url>
-          <line>160</line>
-          <option name="timeStamp" value="38" />
+          <line>185</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/gc/tools/1.0.1-SNAPSHOT/tools-1.0.1-SNAPSHOT-plain.jar!/io/tools/ResourceLibraryGenerateProcessor.class</url>
+          <line>130</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/gc/tools/1.0.1-SNAPSHOT/tools-1.0.1-SNAPSHOT-plain.jar!/io/tools/ResourceLibraryGenerateProcessor.class</url>
+          <line>124</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/gc/tools/1.0.1-SNAPSHOT/tools-1.0.1-SNAPSHOT-plain.jar!/io/tools/ResourceLibraryGenerateProcessor.class</url>
+          <line>138</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tools/src/main/java/io/tools/ResourceLibraryGenerateProcessor.java</url>
+          <line>189</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/gc/tools/1.0.1-SNAPSHOT/tools-1.0.1-SNAPSHOT-plain.jar!/io/tools/ResourceLibraryGenerateProcessor.class</url>
+          <line>133</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

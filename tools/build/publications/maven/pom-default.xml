@@ -28,6 +28,12 @@
       <version>1.12.1</version>
       <scope>runtime</scope>
     </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>30.1.1-jre</version>
+      <scope>runtime</scope>
+    </dependency>
   </dependencies>
   <dependencyManagement>
     <dependencies>

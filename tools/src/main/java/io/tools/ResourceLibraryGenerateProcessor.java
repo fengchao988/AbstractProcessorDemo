@@ -1,9 +1,12 @@
 package io.tools;
 
 import com.google.auto.service.AutoService;
+import com.google.common.base.CaseFormat;
 import com.squareup.javapoet.*;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.data.repository.NoRepositoryBean;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.processing.*;
@@ -36,8 +39,9 @@ public class ResourceLibraryGenerateProcessor extends AbstractProcessor {
     private Messager messager;
     private Filer filer;
     private Elements elementUtils;
-    //private Map<String, FactoryGroupedClasses> factoryClasses = new LinkedHashMap<>();
 
+    //FIXME 钊哥 这块我暂时写死了 麻烦你改成你本地的路径
+    private static final File srcMainFile = new File("C:\\Users\\Fengc\\Desktop\\gencode\\system\\src\\main\\java");
 
     /**
      * 这个方法用于初始化处理器，方法中有一个ProcessingEnvironment类型的参数，ProcessingEnvironment是一个注解处理工具的集合。它包含了众多工具类。例如：
@@ -158,43 +162,52 @@ public class ResourceLibraryGenerateProcessor extends AbstractProcessor {
                 }
             });
             // 根据注解生成持久化接口类
-            genPersistenceJava(element, persistenceName);
-
+            Class<?> persistenceInterface = genPersistenceJava(element, persistenceName);
             // 生成主资源库实现类
-            genRepositoryImplJava(element, methodSpecList);
-
+            genRepositoryImplJava(element, methodSpecList,persistenceInterface);
 
         }
         return true;
     }
 
-    private void genPersistenceJava(Element element, String persistenceName) {
+    // 根据注解生成持久化接口类
+    private Class<?> genPersistenceJava(Element element, String persistenceName) {
         TypeSpec persistenceClass = TypeSpec.interfaceBuilder(persistenceName)
                 .addModifiers(Modifier.PUBLIC)
-                .addAnnotation(Repository.class)
+                .addAnnotation(NoRepositoryBean.class)
                 .addSuperinterface(TypeName.get(JpaRepository.class))
-                //.superclass(TypeName.get(JpaSpecificationExecutor.class))
+                .addSuperinterface(TypeName.get(JpaSpecificationExecutor.class))
                 .build();
 
         String packageName = elementUtils.getPackageOf(element).getQualifiedName().toString();
         messager.printMessage(Diagnostic.Kind.NOTE,"=============packageName======"+packageName);
         try {
+
             JavaFile javaFile = JavaFile.builder(packageName, persistenceClass)
                     .addFileComment(" This codes are generated automatically. Do not modify!")
                     .build();
-            File srcMainFile = new File("C:\\Users\\Fengc\\Desktop\\gencode\\system\\src\\main\\java");
             javaFile.writeTo(srcMainFile);
+            return Class.forName(packageName + "." + persistenceName);
         } catch (IOException e) {
             e.printStackTrace();
+            return null;
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            return null;
         }
     }
 
-    private void genRepositoryImplJava(Element element, List<MethodSpec> methodSpecList) {
+    // 生成主资源库实现类
+    private void genRepositoryImplJava(Element element, List<MethodSpec> methodSpecList,Class<?> persistenceInterfaceClass) {
+        //FIXME 王钊 =构造资源库实现类中的jpa局部变量参数时的类型无法获取
+        FieldSpec fieldSpec = FieldSpec.builder(TypeName.get(persistenceInterfaceClass), CaseFormat.LOWER_HYPHEN.to(CaseFormat.LOWER_CAMEL, persistenceInterfaceClass.getSimpleName()), Modifier.PRIVATE)
+                .addAnnotation(Autowired.class).build();
+
         TypeSpec classData = TypeSpec.classBuilder(element.getSimpleName().toString()+"Impl")
                 .addModifiers(Modifier.PUBLIC)
                 .addMethods(methodSpecList)
                 .addSuperinterface(element.asType())
-                //.addField()
+                .addField(fieldSpec)
                 .build();
 
         String packageName = elementUtils.getPackageOf(element).getQualifiedName().toString();
@@ -203,7 +216,6 @@ public class ResourceLibraryGenerateProcessor extends AbstractProcessor {
             JavaFile javaFile = JavaFile.builder(packageName, classData)
                     .addFileComment(" This codes are generated automatically. Do not modify!")
                     .build();
-            File srcMainFile = new File("C:\\Users\\Fengc\\Desktop\\gencode\\system\\src\\main\\java");
             javaFile.writeTo(srcMainFile);
         } catch (IOException e) {
             e.printStackTrace();
