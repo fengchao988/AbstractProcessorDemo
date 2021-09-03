@@ -4,7 +4,13 @@ io/tools/ResourceLibraryGenerateProcessor.java
  io.tools.ResourceLibraryGenerateProcessor
 io/tools/BaseResourceLibrary.java
  io.tools.BaseResourceLibrary
+com/avro/Product.java
+ com.avro.Product
+ com.avro.Product$1
+ com.avro.Product$Builder
 io/tools/BaseImplResourceLibrary.java
  io.tools.BaseImplResourceLibrary
+io/tools/HREGoodsApplication.java
+ io.tools.HREGoodsApplication
 io/tools/Json.java
  io.tools.Json

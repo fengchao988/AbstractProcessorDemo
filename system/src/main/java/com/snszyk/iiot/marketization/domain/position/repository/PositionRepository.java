@@ -2,9 +2,9 @@ package com.snszyk.iiot.marketization.domain.position.repository;
 
 import com.snszyk.iiot.marketization.domain.position.entity.Position;
 import com.snszyk.iiot.marketization.domain.position.entity.PositionId;
-import io.tools.BaseResourceLibrary;
+//import io.tools.BaseResourceLibrary;
 
-@BaseResourceLibrary(persistence = "PersistenceJpa")
+//@BaseResourceLibrary(persistence = "PersistenceJpa")
 public interface PositionRepository {
 
     Position fromId(PositionId positionId);

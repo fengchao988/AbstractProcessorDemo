@@ -3,6 +3,8 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
     id 'maven-publish'
+    id 'java-library'
+    id 'com.github.davidmc24.gradle.plugin.avro' version '1.2.0'
 }
 
 group 'org.gc'
@@ -12,7 +14,6 @@ repositories {
     mavenLocal()
     mavenCentral()
 }
-
 
 dependencies {
     //以下两条是为了减少编写入口文件工作量，引入的第三方工具
@@ -25,6 +26,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 
     implementation group: 'com.google.guava', name: 'guava', version: '30.1.1-jre'
+
+    implementation "org.apache.avro:avro:1.10.2"
 
 }
 

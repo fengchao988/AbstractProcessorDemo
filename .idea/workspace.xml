@@ -5,6 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30bb2b99-480c-42d5-9692-39ff7b9c0957" name="Default Changelist" comment="添加Jpa实现接口">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/src/main/avro/Product.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/src/main/java/io/tools/HREGoodsApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
@@ -15,33 +22,24 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha256-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha256-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha512-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha512-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/build/bootJarMainClassName" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/build/classes/java/main/com/snszyk/iiot/marketization/domain/position/entity/Position.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/build/classes/java/main/com/snszyk/iiot/marketization/domain/position/entity/PositionId$PositionIdBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/build/classes/java/main/com/snszyk/iiot/marketization/domain/position/entity/PositionId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/build/classes/java/main/com/snszyk/iiot/marketization/domain/position/entity/PositionName$PositionNameBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/build/classes/java/main/com/snszyk/iiot/marketization/domain/position/entity/PositionName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/build/classes/java/main/com/snszyk/iiot/marketization/domain/position/repository/PersistenceJpa.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/build/classes/java/main/com/snszyk/iiot/marketization/domain/position/repository/PositionRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/build/classes/java/main/com/snszyk/iiot/marketization/domain/position/repository/PositionRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/system/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/src/main/java/com/snszyk/iiot/marketization/domain/position/repository/PersistenceJpa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/src/main/java/com/snszyk/iiot/marketization/domain/position/repository/PositionRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/src/main/java/com/snszyk/iiot/marketization/domain/position/repository/PositionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/system/src/main/java/com/snszyk/iiot/marketization/domain/position/repository/PositionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/build/classes/java/main/io/tools/ResourceLibraryGenerateProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build/classes/java/main/io/tools/ResourceLibraryGenerateProcessor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/build/libs/tools-1.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build/libs/tools-1.0.1-SNAPSHOT-plain.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/build/publications/maven/module.json" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build/publications/maven/module.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/build/publications/maven/pom-default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build/publications/maven/pom-default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/build/tmp/publishMavenPublicationToMavenLocal/module-maven-metadata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build/tmp/publishMavenPublicationToMavenLocal/module-maven-metadata.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/build/tmp/publishMavenPublicationToMavenLocal/snapshot-maven-metadata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build/tmp/publishMavenPublicationToMavenLocal/snapshot-maven-metadata.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/src/main/java/io/tools/ResourceLibraryGenerateProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/tools/src/main/java/io/tools/ResourceLibraryGenerateProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/build/publications/maven/module.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/build/publications/maven/pom-default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tools/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/build/tmp/publishMavenPublicationToMavenLocal/module-maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/build/tmp/publishMavenPublicationToMavenLocal/snapshot-maven-metadata.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,20 +73,7 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="gencode" type="f1a62948:ProjectNode" />
-                <item name="system" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="gencode" type="f1a62948:ProjectNode" />
-                <item name="system" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="gencode" type="f1a62948:ProjectNode" />
-                <item name="system" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -107,13 +92,6 @@
                 <item name="tools" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="gencode" type="f1a62948:ProjectNode" />
-                <item name="tools" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="publishing" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -140,16 +118,22 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$PROJECT_DIR$/../../../../Program Files/Java/jdk1.8.0_291/src.zip!/javax/annotation/processing/ProcessingEnvironment.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup/javapoet/1.12.1/cc8234ee4e33415a5888a964e3690092fc112419/javapoet-1.12.1-sources.jar!/com/squareup/javapoet/JavaFile.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup/javapoet/1.12.1/cc8234ee4e33415a5888a964e3690092fc112419/javapoet-1.12.1-sources.jar!/com/squareup/javapoet/CodeBlock.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup/javapoet/1.12.1/cc8234ee4e33415a5888a964e3690092fc112419/javapoet-1.12.1-sources.jar!/com/squareup/javapoet/MethodSpec.java" root0="SKIP_INSPECTION" />
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="JPA Structure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="JPA Structure" value="false" />
+      </map>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="D:/code soft/apache-maven-3.8.1-bin/apache-maven-3.8.1" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../code soft/apache-maven-3.8.1-bin/apache-maven-3.8.1" />
         <option name="userSettingsFile" value="D:\code soft\apache-maven-3.8.1-bin\apache-maven-3.8.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -166,6 +150,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tools/src/main/avro" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -177,14 +162,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\fc_workspace\code\ideaWorkspace\AbstractProcessorDemo\tools\src\main\avro" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Fengc\Desktop\gencode\system" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="io.tools" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.gencode:system [build]">
+  <component name="RunManager" selected="Gradle.AbstractProcessorDemo:tools [build]">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -196,10 +185,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="gencode:system [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AbstractProcessorDemo:tools [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/system" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/tools" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -217,7 +206,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="gencode:system [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="gencode:system [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/system" />
@@ -228,7 +217,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="classes" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -315,21 +304,29 @@
       </RunnerSettings>
       <method v="2" />
     </configuration>
+    <configuration name="HREGoodsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gencode.tools.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.tools.HREGoodsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Gradle.gencode:tools [publishToMavenLocal]" />
-      <item itemvalue="Remote JVM Debug.ProcessTest" />
       <item itemvalue="Gradle.gencode:system [clean]" />
       <item itemvalue="Gradle.gencode:system [build]" />
-      <item itemvalue="Gradle.gencode:system [classes]" />
       <item itemvalue="Gradle.gencode:tools [clean]" />
+      <item itemvalue="Gradle.AbstractProcessorDemo:tools [build]" />
+      <item itemvalue="Remote JVM Debug.ProcessTest" />
+      <item itemvalue="Spring Boot.HREGoodsApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AbstractProcessorDemo:tools [build]" />
+        <item itemvalue="Gradle.gencode:tools [clean]" />
         <item itemvalue="Gradle.gencode:system [build]" />
         <item itemvalue="Gradle.gencode:system [clean]" />
         <item itemvalue="Gradle.gencode:tools [publishToMavenLocal]" />
-        <item itemvalue="Gradle.gencode:tools [clean]" />
-        <item itemvalue="Gradle.gencode:system [classes]" />
       </list>
     </recent_temporary>
   </component>
@@ -349,6 +346,10 @@
       <workItem from="1629180206830" duration="7972000" />
       <workItem from="1629190373424" duration="3956000" />
       <workItem from="1629371508975" duration="5704000" />
+      <workItem from="1630578911309" duration="788000" />
+      <workItem from="1630579710605" duration="830000" />
+      <workItem from="1630647811569" duration="3332000" />
+      <workItem from="1630663946451" duration="311000" />
     </task>
     <task id="LOCAL-00001" summary="调试通过的样例">
       <created>1628939270463</created>

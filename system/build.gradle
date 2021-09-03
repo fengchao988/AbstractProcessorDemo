@@ -16,10 +16,10 @@ repositories {
 }
 
 dependencies {
-    implementation("org.gc:tools:1.0.1-SNAPSHOT")
+    //implementation("org.gc:tools:1.0.1-SNAPSHOT")
     //annotationProcessor project(':tools')
 
-    annotationProcessor 'org.gc:tools:1.0.1-SNAPSHOT'
+/*    annotationProcessor 'org.gc:tools:1.0.1-SNAPSHOT'*/
 
     compileOnly 'org.projectlombok:lombok:1.18.8'
     annotationProcessor 'org.projectlombok:lombok:1.18.8'
